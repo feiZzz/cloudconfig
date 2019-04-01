@@ -1,6 +1,6 @@
 spring:
-    profiles:
-      active: dev
+  profiles:
+    active: dev
 
 spring:
   application:
@@ -12,6 +12,7 @@ spring:
   application:
     name: cloudconfig-test
   profiles: test
+
 
 spring:
   application:

@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: dev
+
+
+---
+spring:
+  application:
+    name: eurekaconfig-dev
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://node2:9001/eureka/
+  instance:
+    hostname: node1
+    
+---
+spring:
+  application:
+    name: eurekaconfig-test
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://node2:9001/eureka/
+  instance:
+    hostname: node1

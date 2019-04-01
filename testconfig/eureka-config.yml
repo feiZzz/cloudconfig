@@ -14,9 +14,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://node2:9001/eureka/
+    registerWithEureka: false
+    fetchRegistry: false
   instance:
     hostname: node1
-    
+
 ---
 spring:
   application:
@@ -28,5 +30,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://node2:9001/eureka/
+  registerWithEureka: false
+  fetchRegistry: false
   instance:
     hostname: node1

@@ -3,18 +3,20 @@ spring:
     active: dev
 
 spring:
+  profiles: dev
   application:
     name: cloudconfig-dev
-  profiles: dev
+
 
 
 spring:
+  profiles: test
   application:
     name: cloudconfig-test
-  profiles: test
+
 
 
 spring:
+  profiles: pro
   application:
     name: cloudconfig-pro
-  profiles: pro

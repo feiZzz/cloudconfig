@@ -13,6 +13,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://node1:9000/eureka/
+    instance:
+      prefer-ip-address: true
 ---
 spring:
   application:
@@ -25,3 +27,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://node1:9000/eureka/
+    instance:
+      prefer-ip-address: true

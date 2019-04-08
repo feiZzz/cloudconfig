@@ -27,6 +27,6 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://node1:9001/eureka/
+      defaultZone: http://node1:9000/eureka/,http://node2:9001/eureka/
   instance:
     hostname: node3

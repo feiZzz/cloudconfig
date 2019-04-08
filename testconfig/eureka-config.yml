@@ -9,13 +9,13 @@ spring:
     name: eurekaconfig-dev
   profiles: dev
 server:
-  port: 9000
+  port: 9003
 eureka:
   client:
     service-url:
-      defaultZone: http://node2:9001/eureka/
+      defaultZone: http://node1:9001/eureka/
   instance:
-    hostname: node1
+    hostname: node3
 
 ---
 spring:
@@ -23,10 +23,10 @@ spring:
     name: eurekaconfig-test
   profiles: test
 server:
-  port: 9000
+  port: 9003
 eureka:
   client:
     service-url:
-      defaultZone: http://node2:9001/eureka/
+      defaultZone: http://node1:9001/eureka/
   instance:
-    hostname: node1
+    hostname: node3
